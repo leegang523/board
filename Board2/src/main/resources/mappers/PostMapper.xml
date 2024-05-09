@@ -16,7 +16,7 @@
 
 
     <!-- 게시글 저장 -->
-    <insert id="save" parameterType="com.board2.vo.BoardPostVO">
+    <insert id="save" parameterType="com.board2.vo.BoardPostVO" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO tb_post (
             <include refid="postColumns" />
         ) VALUES (
